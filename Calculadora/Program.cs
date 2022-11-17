@@ -61,9 +61,9 @@ namespace Calculadora {
 
     static void Soma() {
         Console.WriteLine("Soma de dois números:");
-        Console.WriteLine("Digite o primeiro número:");
+        Console.Write("Digite o primeiro número: ");
         int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o segundo número:");
+        Console.Write("Digite o segundo número: ");
         int b = int.Parse(Console.ReadLine());
         int resultado = a + b;
         Console.WriteLine($"O resultado é: {resultado}");
@@ -73,9 +73,9 @@ namespace Calculadora {
 
     static void Subtracao() {
         Console.WriteLine("Subtração de dois números:");
-        Console.WriteLine("Digite o primeiro número:");
+        Console.Write("Digite o primeiro número: ");
         int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o segundo número:");
+        Console.Write("Digite o segundo número: ");
         int b = int.Parse(Console.ReadLine());
         int resultado = a - b;
         Console.WriteLine($"O resultado é: {resultado}");
@@ -85,9 +85,9 @@ namespace Calculadora {
 
     static void Divisao() {
         Console.WriteLine("Divisão de dois números:");
-        Console.WriteLine("Digite o primeiro número:");
+        Console.Write("Digite o primeiro número: ");
         int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o segundo número:");
+        Console.Write("Digite o segundo número: ");
         int b = int.Parse(Console.ReadLine());
         float resultado = (float)a / (float)b;
         Console.WriteLine($"O resultado é: {resultado}");
@@ -97,9 +97,9 @@ namespace Calculadora {
 
     static void Multiplicacao() {
         Console.WriteLine("Multiplicação de dois números:");
-        Console.WriteLine("Digite o primeiro número:");
+        Console.Write("Digite o primeiro número: ");
         int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o segundo número:");
+        Console.Write("Digite o segundo número: ");
         int b = int.Parse(Console.ReadLine());
         int resultado = a * b;
         Console.WriteLine($"O resultado é: {resultado}");
@@ -110,9 +110,9 @@ namespace Calculadora {
     static void Potencia() {
         // 2 elevado a 3 (2^3) = 2 * 2 * 2 = 8
         Console.WriteLine("Potência de um número:");
-        Console.WriteLine("Digite a base:");
+        Console.Write("Digite a base: ");
         int baseNum = int.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o expoente:");
+        Console.Write("Digite o expoente: ");
         int expo = int.Parse(Console.ReadLine());
         int resultado = (int)Math.Pow(baseNum, expo);
         Console.WriteLine($"O resultado é: {resultado}");
@@ -123,7 +123,7 @@ namespace Calculadora {
     static void Raiz() {
 
         Console.WriteLine("Raiz de um número:");
-        Console.WriteLine("Digite o número:");
+        Console.Write("Digite o número: ");
         int a = int.Parse(Console.ReadLine());
         double resultado = Math.Sqrt(a); // Sqrt Raiz quadrada
         Console.WriteLine($"O resultado é: {resultado}");
